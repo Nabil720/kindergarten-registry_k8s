@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: nanil0034/kindergarten-frontend:353a98a
+        image: nanil0034/kindergarten-frontend:c660448
         ports:
         - containerPort: 3000
 ---
