@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: backend
-        image: nanil0034/kindergarten-backend:28c95e3
+        image: nanil0034/kindergarten-backend:9eaa90f
         ports:
         - containerPort: 5000
         env:
