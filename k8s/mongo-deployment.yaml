@@ -24,22 +24,6 @@ spec:
         - name: mongo-data
           persistentVolumeClaim:
             claimName: mongo-pvc
-      livenessProbe:
-        exec:
-          command:
-            - "mongo"
-            - "--eval"
-            - "db.runCommand('ping')"
-        initialDelaySeconds: 30
-        periodSeconds: 10
-      readinessProbe:
-        exec:
-          command:
-            - "mongo"
-            - "--eval"
-            - "db.runCommand('ping')"
-        initialDelaySeconds: 10
-        periodSeconds: 5
 
 ---
 apiVersion: v1
