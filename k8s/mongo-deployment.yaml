@@ -19,7 +19,7 @@ spec:
             - key: kubernetes.io/hostname
               operator: In
               values:
-                - master  # Specify the worker node where the PV should be mounted
+                - worker1  # Specify the worker node where the PV should be mounted
 ---
 apiVersion: apps/v1
 kind: Deployment
